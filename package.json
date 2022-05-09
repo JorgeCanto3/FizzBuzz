@@ -7,7 +7,9 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "linter": "node ./node_modules/eslint/bin/eslint.js .",
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
   },
   "repository": {
     "type": "git",
@@ -21,5 +23,8 @@
   "homepage": "https://github.com/JorgeCanto3/FizzBuzz#readme",
   "dependencies": {
     "jest": "^26.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.15.0"
   }
 }
