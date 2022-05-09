@@ -7,13 +7,13 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/JorgeCanto3/FizzBuzz.git"
   },
-  "author": "j",
+  "author": "JorgeCanto3",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/JorgeCanto3/FizzBuzz/issues"
