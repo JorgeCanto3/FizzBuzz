@@ -1,31 +1,13 @@
-# .github/workflows/test.yaml
-name: test
-on: push
+on: [push]
+
 jobs:
-  test:
+  build:
+
     runs-on: ubuntu-latest
-    services:
-      postgres:
-        image: postgres
-        env:
-          POSTGRES_USER: postgres
-          POSTGRES_PASSWORD: postgres
-        options: >-
-          --health-cmd pg_isready
-          --health-interval 10s
-          --health-timeout 5s
-          --health-retries 5
-        ports:
-          - 5432:5432
-    env:
-      DATABASE_URL: postgresql://postgres:postgres@localhost:5432/explorers_api?schema=public
-      PORT: 3030
+
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: '18.x'
-      - run: npm install
-      - run: npx prisma migrate dev --name init
-      - run: npm run seed
-      - run: npm run test
+    - uses: actions/checkout@v1
+    - name: Run Jest
+      uses: stefanoeb/jest-action@1.0.3
+      with:
+        jestArgs: test/services/ExplorerService.test.js
