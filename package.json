@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/JorgeCanto3/FizzBuzz#readme",
   "dependencies": {
+    "express": "^4.18.1",
     "jest": "^26.0.0"
   },
   "devDependencies": {
