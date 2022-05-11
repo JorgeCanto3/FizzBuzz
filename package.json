@@ -9,7 +9,8 @@
   "scripts": {
     "test": "jest",
     "linter": "node ./node_modules/eslint/bin/eslint.js .",
-    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix"
+    "linter-fix": "node ./node_modules/eslint/bin/eslint.js . --fix",
+    "bot": "node ./lib/bot.js"
   },
   "repository": {
     "type": "git",
