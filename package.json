@@ -23,7 +23,8 @@
   "homepage": "https://github.com/JorgeCanto3/FizzBuzz#readme",
   "dependencies": {
     "express": "^4.18.1",
-    "jest": "^26.0.0"
+    "jest": "^26.0.0",
+    "node-telegram-bot-api": "^0.57.0"
   },
   "devDependencies": {
     "eslint": "^8.15.0"
