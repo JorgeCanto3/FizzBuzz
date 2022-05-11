@@ -26,3 +26,5 @@ describe("Unit Tests for explorer controller file", () => {
         expect(explorersAmountByMissions).toBe(explorersAmountByMissions);
     });
 });
+
+//Test doesn't run cause of files
